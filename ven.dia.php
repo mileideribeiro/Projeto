@@ -22,7 +22,7 @@ session_start();
 </head>
 <style>
 	*{
-		color:white;
+		color:black;
 	}
 </style>
 <body>

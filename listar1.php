@@ -31,10 +31,9 @@ include_once("conexao.php");
 
 	<body>
 		<br>
-		<h1> Listar Usuários</h1>
+		<h1> Listar Clientes</h1>
 
-<table border="0">
-</table>	  
+<table border="0"></table>	  
 		
 	  <?php
 	  	$busca = "";
@@ -57,15 +56,15 @@ include_once("conexao.php");
 				echo '<td>' .  $row_cadastro['endereco'] . '</td>';
 				echo '<td>'.  $row_cadastro['email'] .'</td>';
 				echo '<td>'. $row_cadastro['created'] .'</td>';
-			  if (!empty($_SESSION['login'])){ 
-			  echo "<td><a href='excluir.php?tipo=2&id_cliente=" . $row_cadastro['id_cliente'] . "'><img src='imagens/del.png' width='20' height='20' title='Excluir' /></td>";
-			  echo "<td><a href='editar.php?tipo=2&id_cliente=". $row_cadastro['id_cliente'] ."'/><img src='imagens/edit.jpg' width='20' height='20' title='Alterar' /></td>";
-			  }
-		 		 echo '</tr>';
+			if (!empty($_SESSION['login'])){ 
+			echo "<td><a href='excluir.php?tipo=2&id_cliente=" . $row_cadastro['id_cliente'] . "'><img src='imagens/del.png' width='20' height='20' title='Excluir' /></td>";
+			echo "<td><a href='editar.php?tipo=2&id_cliente=". $row_cadastro['id_cliente'] ."'/><img src='imagens/edit.jpg' width='20' height='20' title='Alterar' /></td>";
+			}
+		 		echo '</tr>';
 			} 
 	  echo '</table>';
 	  $result->close();
-		}
+	}
   
 	  ?>
 	  <br><br>

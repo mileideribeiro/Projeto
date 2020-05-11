@@ -22,7 +22,7 @@ session_start();
 		
 		<!--Dados dos gastos variaveis-->
 		<form method="POST" action="variaveis.php">
-			<label>Material de Escritorio: </label>
+			<label>Material de Escritorio/<br> Produto de limpeza: </label>
 			<input type="text" name="material">
 			<br><br>
 			
@@ -31,13 +31,7 @@ session_start();
 
 			<br><br>
 			
-			<label>Produtos de limpeza: </label>
-			<input type="text" name="produto">
-			<br><br>
-			
-			<label>Valor: </label><br>
-			<input type="text" name="valor2">
-			<br><br>
+		
 			
 			<div class="wrapper">
 				<div class="btn">
