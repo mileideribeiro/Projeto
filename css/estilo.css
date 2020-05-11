@@ -1,0 +1,534 @@
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+/*Corpo*/
+
+body{       
+	background-color: rgb(80, 32, 80);
+	font-family: 'Josefin Sans', sans-serif;
+	margin:0;
+	padding:0;
+	background-size:cover;
+  }
+
+  *{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	list-style:none;
+	text-decoration:none;
+}
+
+
+
+/*#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+	position: center;
+}#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+}
+#menu ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #EA0000;
+}
+
+#popup{display:none;
+	position:absolute;
+	top:50%;left:50%;
+	margin-left:-150px;
+	margin-top:-100px;
+	padding:10px;
+	width:300px;
+	height:200px;
+	border:1px solid #d0d0d0
+	}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 19px 12px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover 
+li a:hover {
+  background-color: #111;
+}
+/*cadastro*/
+
+.payment{
+	background: #000;
+	max-width: 360px;
+	margin: 80px auto;
+	height: auto;
+	padding: 35px;
+	padding-top: 70px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.payment h2{
+	text-align:center;
+	letter-spacing: 2px;
+	margin-bottom: 40px;
+	color: #000;
+}
+
+.form .label{
+	display: block;
+	color: #555555;
+	margin-bottom: 6px;
+}
+.form .input{
+	padding: 13px 0 12px 25px;
+	width: 100%;
+	text-align: center;
+	border: 2px solid #dddddd;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	word-wrap: 3px;
+	outline: none;
+	font-size: 16px;
+	color: #555555;
+}
+
+.icon-relative{
+	position: relative;
+}
+
+.icon-relative .fas{
+	position: absolute;
+	bottom: 29px;
+	left: 15px;
+	font-size: 20px;
+	color: #c002a0;
+}
+
+.btn input{
+	border: none;
+	outline: none;
+	height: 45px;
+	color: #fff;
+	background: rgb(167, 0, 92);
+	border-radius: 5px ;
+	font-size: 18px;
+	text-align: center;
+}
+.btn input:hover{
+	cursor: pointer;
+	background: #ffc252;
+	color: #000;
+}
+.payment-logo{
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100px;
+	height: 100px;
+	background: #f8f8f8;
+	border-radius: 50%;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+	text-align: center;
+	line-height: 85px;
+}
+.payment-logo::before{
+	content:"" ;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 90px;
+	height: 90px;
+	background: rgb(167, 0, 92);
+	border-radius: 50%;
+}
+
+.payment-logo p{
+	color: #f8f8f8;
+	position: relative;
+	font-family: 'Balcoo Bhaijaan', cursive;
+	font-size:58px;
+	bottom: 50%;
+	top: 0%;
+}
+/*login*/
+.loginbox{
+
+	width: 320px;
+	height: 470px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+
+h1 {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+	color:#fff;
+}
+.loginbox label{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.loginbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.loginbox input[type="login"], input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color:#fff;
+	font-size: 16px;
+}
+
+.loginbox input[type="submit"],input[type="reset"],input[type="button"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	background: rgb(167, 0, 92);
+	border-radius: 5px ;
+	font-size: 18px;
+	text-align: center;
+}
+
+.loginbox input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover{
+	cursor: pointer;
+	background: #ffc252;
+	color: #000;
+}
+
+/*menu*/
+/*.wrapper{
+	display:flex; /* fixar o elemento
+	position:relative;/*A posição é definida através de quatro outras propriedades: top, bottom, left e right
+}
+
+.wrapper .sidebar{
+	position:fixed; /* fixar o elemento
+	width:240px; /*largura
+	height:100%; /* altura
+	background:#333; /*cor
+	padding: 30px 0;	
+}
+.wrapper .sidebar h2{
+	color: #fff;
+	text-transform:uppercase;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+.wrapper .sidebar ul li{
+	padding:15px;
+	border-bottom:1px solid rgba(0,0,0,0.05); /*separação dos termos
+	border-top:1px solid rgba(225,225,225,0.05); /*linhas entre os termos
+}
+
+.wrapper .sidebar ul li a{
+	color:#bdb8d7;/*cor cinza
+	display:block;
+}
+
+.wrapper .sidebar ul li a .fas{
+	width:25px;
+}
+.wrapper .sidebar ul li:hover{
+	background:  #ffc252;	
+}
+
+.wrapper .sidebar ul li:hover a{
+	color:#fff;
+}
+
+.wrapper .sidebar .social_media{
+	position:absolute;
+	bottom:0;
+	left:50%;
+	transform:translateX(-50%);
+	display:flex;
+}
+.wrapper .sidebar .social_media a{
+	display:block;
+	width:40px;
+	background:rgb(167, 0, 92);
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	margin:0 5px;
+	color:#bdb8d7;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+}
+.wrapper .main_content {
+	width: 100%;
+	margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+	padding: 20px;
+	background: #333;
+	color:#fff;
+	border-bottom: 1px solid #e0e4e7;
+
+}
+
+.wrapper .main_content .info{
+	margin: 20px;
+	color:#717171;
+	line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+	color: #fff;
+	width: 13px;
+}
+.wrapper .main_content .info .div img{
+	margin-left:50%; /*lado
+	padding:50px;
+	position:relative;
+	width:60vw; /*largura
+	height:40vw;
+	margin-bottom:45%;
+	top:50px;
+}*/
+
+.cliente {
+	background:rgba(44,62,80,0.7);
+	padding:40px;
+	width:340px;
+	margin:auto;
+	margin-top:80px;
+	height:500px;
+	margin-left:180;
+}
+.form{
+	width:240px;
+	text-align:center;
+}
+
+h1 {
+	margin: 0;
+	padding-top: 0;
+	padding-left: 0;
+	padding-bottom: 20px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 25px;
+
+}
+
+.vendas{
+	background:rgba(44,62,80,0.7);
+	padding:40px;
+	width:280px;
+	height:420px;
+	margin:auto;
+	margin-top:80px;
+	margin-left:180;
+	
+}
+.vendas .label{
+	background: rgb(0, 0, 0);
+}
+.vendas .div .label{
+	background: rgb(0, 0, 0);
+}
+
+.fixo{
+	background:rgba(44,62,80,0.7);
+	padding:40px;
+	width:330px;
+	margin:auto;
+	margin-top:80px;
+	height:430px;
+	margin-left:180;
+}
+
+.funcionario {
+	background:rgba(44,62,80,0.7);
+	padding:40px;
+	width:345px;
+	margin:auto;
+	margin-top:80px;
+	height:480px;
+	margin-left:180;
+}
+
+.compras{
+	background:rgba(44,62,80,0.7);
+	padding:40px;
+	width:300px;
+	margin:auto;
+	margin-top:80px;
+	height:400px;
+	margin-left:180;
+}
+
+.variaveis{
+	background:rgba(44,62,80,0.7);
+	padding:40px;
+	width:320px;
+	height:390px;
+	margin:auto;
+	margin-top:80px;
+	margin-left:180;
+}
+
+/*teste*/
+.menu2 ul li{
+	background: #000;
+	color: white;
+	float: left;
+	width: 192px;
+	height: 60px;
+	display: block;
+	text-align: center;
+	line-height: 60px;
+	font-size: 16px;
+	position: relative;
+	font-family: cursive;
+}
+
+li>a{
+	display: block;
+	color: white;
+	line-height: 60px;
+	text-align: center;
+	font-family: cursive ;
+	font-size: 16px;
+	text-decoration: none;
+}
+.menu2 li > a:hover{
+	background:rgb(167, 0, 92);
+	color: #333;
+}
+
+.menu2 li>a:hover,
+.menu2 li>a:focus{
+	background:rgb(167, 0, 92);
+	color: #333;
+}
+
+.menu2 ul li:hover{
+	background:rgb(167, 0, 92);
+}
+.menu2 ul{
+	padding: 1px;
+}
+.menu2 ul ul{
+	display: none;
+}
+.menu2 ul li:hover > ul{
+	display: block;
+}
+.menu2 ul ul ul{
+	margin-left: 195px;
+	top: 0px;
+	position: absolute;
+}
+
+.menu2 ul ul li:hover{
+	background:rgb(167, 0, 92);
+}
+
+.menu2 ul ul ul li:hover{
+	background:rgb(112, 3, 63);
+}
+/*
+
+@media screen and (max-width:1260px){
+	.menu2 ul li{
+		width: 800px;
+	}
+	.menu2 > li{
+		width: 150px;
+	}
+
+}
+@media screen and (max-width:1060px){
+	.menu2{
+		width: 100%;
+		height: 60px;
+		position: relative;
+		top: 80px;
+	}
+	.menu2 ul li{
+		width: 100%;
+		height: 60px;
+		float: right;
+
+	}
+	.menu2 > li{
+		width: 18%;
+	}
+	li>a{
+		line-height: 60px;
+		font-size: 16px;
+	}
+
+
+}
+@media screen and (max-width:480px){
+	.menu2{
+		width: 100%;
+		height: 60px;
+	}
+	.menu2 ul li{
+		width: 100%;
+		height: 80px;
+		float: none;
+	}
+	.menu2 > li{
+		width: 100%;
+		list-style: none;
+		float: none;
+		border-bottom: 1px solid skyblue;
+		border-right: 1px solid skyblue ;
+	}
+	li>a{
+		display: block;
+		color: white;
+		line-height: 60px;
+		font-size: 16px;
+		background: #333;
+	}
+	
+}*/
